@@ -1239,7 +1239,7 @@ HTML;
             $begin = $page = $pageCount = 1;
             $end = $totalCount = $count;
             if (($summaryContent = $this->summary) === null) {
-                return Html::tag($tag, Yii::t('kvgrid', 'Total <b>{count, number}</b> {count, plural, one{{item}} other{{items}}}.', [
+                return Html::tag($tag, Yii::t('kvgrid', 'Total <b>{count, number}</b> {count, plural, one{item} other{items}}.', [
                     'begin' => $begin,
                     'end' => $end,
                     'count' => $count,
